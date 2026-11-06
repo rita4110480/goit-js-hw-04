@@ -1,11 +1,9 @@
-isEnoughCapacity(products, containerSize) {
+function isEnoughCapacity(products, containerSize) {
     let total = 0;
-    for (const product of products) {
-        if (product < containerSize) {
-            total += product[products];
+    for (const product in products) { 
+            total += products[product];
         }
-    }
-    return total <= containerSize;
+        return total <= containerSize;
 }
 
 console.log(
